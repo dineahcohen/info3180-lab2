@@ -1,3 +1,97 @@
 body {
     padding-top: 5rem;
 }
+
+.header{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	grid-column: 1 / -1;
+	/* grid-row: ; */
+    background-color: black;
+    color: white;
+    /* align-items: center; */
+	text-align: left;
+}
+
+.profile_card{
+    font-style: helvetica;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.top{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #51CCC5;
+    padding: 2rem;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.top h2{
+	text-shadow: 0px 2px 10px #000;
+}
+
+.top ul{
+	list-style-type: none;
+    text-shadow: 0px 2px 10px #000;
+}
+
+img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+
+.bottom{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    padding: 2.5rem;
+}
+
+.bio{
+    font-size: 0.8rem;
+    color: #707c80;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.acc_numbers{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 60%;
+}
+
+.info { 
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+}
+
+.info .amount{
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.info .label{
+    color: #707c80;
+    font-size: 0.75rem;
+}
+
+button{
+	justify-self: center;
+	background-color: #62F7EF;
+	color: white;
+	padding: 0.4rem 1.2rem;
+    width: 20%;
+	border-radius: 5px;
+	border: none;
+}
+
+button:hover, a:hover {
+	opacity: 0.7;
+  }

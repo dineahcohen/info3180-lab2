@@ -1,0 +1,46 @@
+<!--should have photo, full name, username, location,
+date joined, short bio, #of posts, #of followers
+#of persons following, follow button  -->
+
+{% extends "base.html" %}
+
+{% block main %}
+<!-- <head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='app.css') }}">
+</head> -->
+
+<section clas="profilecard"> 
+    <div class="top">
+        <img id="avi" src= "{{ url_for('static', filename='avi.jpg') }}" width= 100px height=100px>
+        <h2>Arya Stark</h2>
+        <ul> 
+            <li>@aryastark</li>
+            <li>Winterfell, Westeros</li>
+            <li>Joined {{ date_joined }}</li>
+        </ul>
+    </div>
+
+    <div class="bottom">
+        <section class="bio">
+            <p> A girl has no bio.</p>
+        </section>
+        
+        <ul class="acc_numbers">
+            <li class="info">
+                <p class="amount">0</p>
+                <p class="label">Posts</p>
+            </li>
+            <li class="info">
+                <p class="amount">300</p>
+                <p class="label">Following</p>
+            </li>
+            <li class="info">
+                <p class="amount">1200</p>
+                <p class="label">Followers</p>
+            </li>
+        </ul>
+    </div>
+    <button> Follow </button>
+
+</section>
+{% endblock %}
